@@ -1,0 +1,12 @@
+<div class="container col-lg-4 row mx-auto mt-5">
+    <div class="card" style="width: 30rem ; height: 30rem;">
+      <img src="{{currentArticle.urlToImage}}" class="card-img-top" alt="{{currentArticle.title}}">
+      <div class="card-body">
+        <h5 class="card-title">{{currentArticle.title}}</h5>
+        <p class="card-text">{{currentArticle.description}}</p>
+        <a href="{{currentArticle.url}}" class="btn btn-primary">Read More</a>
+        <button class="btn btn-secondary" (click)="nextArticle()">Next</button>
+      </div>
+    </div>
+  </div>
+  
